@@ -1,6 +1,6 @@
 /****************************************************
 my name						    *
-Instructor @ Duan				    *
+Instructor @ name				    *
 Project 1					    *
 Analyzing Internet Network Connectivity		    *
 --analyze BGP routing tables to obtain the	    *

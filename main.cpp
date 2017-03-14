@@ -1,11 +1,11 @@
 /****************************************************
-Alex Quesenberry									*
-Instructor @ Duan									*
-Project 1											*
-Analyzing Internet Network Connectivity				*
---analyze BGP routing tables to obtain the			*
---internet connectivity information, and determine	*
---the set of neighboring Ases for each AS			*
+my name						    *
+Instructor @ Duan				    *
+Project 1					    *
+Analyzing Internet Network Connectivity		    *
+--analyze BGP routing tables to obtain the	    *
+--internet connectivity information, and determine  *
+--the set of neighboring Ases for each AS	    *
 ****************************************************/
 #include <iostream>
 #include <string>
@@ -15,14 +15,14 @@ Analyzing Internet Network Connectivity				*
 #include <algorithm>
 using namespace std;
 
-//**function declarations**
+
 void GetInput(vector<vector<int>>&);
 void VectorToMap(const vector<vector<int>>&, map<int, set<int>>&);
 void RemoveDuplicates(vector<int>&);
 bool CustomSort(pair<int, set<int>> v1, pair<int, set<int>> v2);
 void PrintResults(const vector<pair<int, set<int>>>&);
 
-//****MAIN*****
+
 int main(){
 	vector<vector<int>> inputVec;
 	map<int, set<int>> numMap;
@@ -37,9 +37,9 @@ int main(){
 }
 
 //********************************************
-//Get input from user						 *
-//Place input into vector of vectors		 *
-//remove any unwanted duplicates			 *
+//Get input from user			     *
+//Place input into vector of vectors	     *
+//remove any unwanted duplicates             *
 //********************************************
 void GetInput(vector<vector<int>>& in){
 	vector<int> tempVec;
@@ -89,7 +89,7 @@ void GetInput(vector<vector<int>>& in){
 
 //**********************************************************************
 //Iterate through the vector of vectors, accessing each inner vector   *
-//Create or access a key for each individual number					   *
+//Create or access a key for each individual number		       *				   *
 //while placing its neighbor values in a set(to make unique neighbors) *
 //**********************************************************************
 void VectorToMap(const vector<vector<int>>& vec, map<int, set<int>>& mp){
@@ -134,8 +134,8 @@ void RemoveDuplicates(vector<int>& inVec){
 } //end RemoveDuplicates
 
 //***********************************************
-//Custom sorting							    *
-//sort by number of neighbors, descending		*
+//Custom sorting				*
+//sort by number of neighbors, descending	*
 //secondary sort by the numbers value, asceding *
 //***********************************************
 bool CustomSort(pair<int, set<int>> v1, pair<int, set<int>> v2){
